@@ -1,6 +1,10 @@
 {
-  "name": "Demo",
+  "name": "five-star-rating",
   "version": "0.2.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:NauxLiu/five-star-rating.git"
+  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.1",
