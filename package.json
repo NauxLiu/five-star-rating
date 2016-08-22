@@ -1,6 +1,7 @@
 {
   "name": "five-star-rating",
   "version": "0.2.1",
+  "main": "js/src/rating.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:NauxLiu/five-star-rating.git"
