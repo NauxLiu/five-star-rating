@@ -4,7 +4,7 @@
 
   /**
    * rating
-   * 
+   *
    * @description The rating component.
    * @param {HTMLElement} el The HTMl element to build the rating widget on
    * @param {Number} currentRating The current rating value
@@ -13,10 +13,10 @@
    * @return {Object} Some public methods
    */
   function rating(el, currentRating, maxRating, callback) {
-    
+
     /**
      * stars
-     * 
+     *
      * @description The collection of stars in the rating.
      * @type {Array}
      */
@@ -164,8 +164,16 @@
   }
 
   /**
-   * Add to global namespace
+   * Exports rating
    */
-  window.rating = rating;
-
+  if (typeof define === 'function' && typeof define.amd === 'object' && define.amd) {
+  		// AMD. Register as an anonymous module.
+  		define(function() {
+  			return rating;
+  		});
+  	} else if (typeof module !== 'undefined' && module.exports) {
+  		module.exports = rating;
+  	} else {
+  		window.FastClick = rating;
+  	}
 })();
